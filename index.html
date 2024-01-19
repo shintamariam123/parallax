@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="nav">
+        <h2 class="logo">Sky Walk</h2>
+        <nav>
+            <a class="nav-link" href="">Home<span></span></a>
+            <a class="nav-link" href="">About<span></span></a>
+            <a class="nav-link" href="">Contact<span></span></a>
+            <a class="nav-link" href="">Help<span></span></a>
+
+        </nav>
+    </section>
+    <section class="img-section">
+        <img id="bg"
+            src="https://www.shutterstock.com/image-vector/stars-stardust-deep-universe-bright-600nw-1461944870.jpg"
+            alt="" srcset="">
+        <img id="moon" src="./images/moon.png" alt="" srcset="">
+        <img id="mountain" src="./images/mountain.png" alt="">
+        <img id="road" src="./images/road.png" alt="" srcset="">
+        <!-- <h2 id="text1">ALL YOU NEED</h2> -->
+
+
+    </section>
+    <h2 class="text2">Welcome</h2>
+    <p class="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, commodi dolor amet vel reiciendis
+        impedit
+        eum, officiis deleniti fugiat exercitationem quaerat quos neque tenetur unde ex. Quos autem maxime nam?Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Amet ut voluptas facilis, magni quod distinctio! Quo,
+        omnis cumque. Earum optio blanditiis ipsa inventore illo vel dolor libero accusantium numquam
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, pariatur! Magnam magni at molestiae laborum
+        velit excepturi commodi quidem blanditiis asperiores, veniam qui alias saepe sed possimus, dolorum reprehenderit
+        accusantium?
+        Quae sit laboriosam illum maiores fugiat quo sed commodi, dignissimos ipsum voluptatum quaerat mollitia amet ea
+        nesciunt quasi nam explicabo in reprehenderit accusamus recusandae delectus at totam, itaque pariatur. Iste.</p>
+
+
+
+    <!-- <div class="img-section1">
+         <img  id="bg1" src="./images/bg(1).jpg" alt="" srcset="">
+        <p id="text4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita similique tempora quam corrupti error
+            porro aspernatur beatae aliquam. Blanditiis ipsam provident mollitia similique sint eligendi accusamus
+            corporis id temporibus consequatur?
+            Praesentium tempore deserunt eaque ullam libero possimus esse molestiae tempora, labore, totam error in
+            doloremque nisi quibusdam laborum itaque unde dolorum quidem nostrum consequuntur ipsa necessitatibus hic?
+            Eaque, nihil aspernatur?
+            Tempora, et numquam. Reiciendis itaque magnam libero aliquid deleniti, nulla illo quo dolore vitae dolorum
+            reprehenderit quas magni modi explicabo neque soluta alias, earum doloribus facere possimus quod autem
+            blanditiis?
+            </p>
+            <img id="mountleft" src="./images/mountain_left.png" alt="" srcset="">
+            <img id="mountright" src="./images/mountain_right.png" alt="" srcset="">
+       
+    </div>
+    -->
+
+    <script>
+        let bg = document.getElementById("bg")
+        let moon = document.getElementById("moon")
+        let mountain = document.getElementById("mountain")
+        let road = document.getElementById("road")
+        let text1 = document.getElementById("text1")
+        
+        
+      
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.top = value * 1 + 'px';
+            mountain.style.top = value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text1.style.top = value * 1 + 'px'
+          
+           
+        
+        })
+
+
+    </script>
+</body>
+
+</html>
